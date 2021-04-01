@@ -1,0 +1,24 @@
+{
+  "name": "CustomAdBlock",
+  "version": "1.0",
+  "description": "Custom AdBlock",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "contextMenus",
+    "http://*/",
+    "https://*/"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
